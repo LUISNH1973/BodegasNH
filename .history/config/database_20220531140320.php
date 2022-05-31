@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 
-$DATABASE_URL = parse_url('postgres://edyyyqmudiokip:6b6b6cb521c0d02baf73c0c613a4f206272b28a2510956226892650d8f066a86@ec2-54-211-255-161.compute-1.amazonaws.com:5432/d855i15271tlke');
+$DATABASE_URL = parse_url('http://glacial-mountain-47341.herokuapp.com/');
 
 return [
 
@@ -71,7 +71,6 @@ return [
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'forge'),
-            'database' => ltrim($DATABASE_URL["path"], "/"),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
@@ -138,7 +137,6 @@ return [
             'password' => env('REDIS_PASSWORD'),
             'port' => env('REDIS_PORT', '6379'),
             'database' => env('REDIS_DB', '0'),
-            'database' => env('DB_CONNECTION', 'pgsql')
         ],
 
         'cache' => [
@@ -148,7 +146,6 @@ return [
             'password' => env('REDIS_PASSWORD'),
             'port' => env('REDIS_PORT', '6379'),
             'database' => env('REDIS_CACHE_DB', '1'),
-            
         ],
 
     ],

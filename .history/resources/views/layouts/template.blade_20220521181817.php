@@ -90,10 +90,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                 <div class="row">
-                    <img src="assets\img\img_vinos\BodegaNH.jpg" alt="Nuestros vinos" width width="00px" height="700px">
-                </div>
-                {{-- <img  src="assets\img\img_vinos\BodegaNH.jpg" alt="Bodegas NH"> --}}
+                <img  src="assets\img\img_vinos\BodegaNH.jpg" alt="Bodegas NH">
                 <!-- Masthead Heading-->
                 {{-- <h1 class="masthead-heading text-uppercase mb-0">BODEGAS NH</h1> --}}
                 <!-- Icon Divider-->

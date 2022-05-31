@@ -91,7 +91,7 @@
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                  <div class="row">
-                    <img src="assets\img\img_vinos\BodegaNH.jpg" alt="Nuestros vinos" width width="00px" height="700px">
+                    <img src="assets\img\img_vinos\BodegaNH.jpg" alt="Nuestros vinos" width width="00px" height="500px">
                 </div>
                 {{-- <img  src="assets\img\img_vinos\BodegaNH.jpg" alt="Bodegas NH"> --}}
                 <!-- Masthead Heading-->

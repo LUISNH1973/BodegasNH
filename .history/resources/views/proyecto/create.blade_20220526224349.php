@@ -17,7 +17,7 @@
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('proyectos.store') }}"  role="form" enctype="multipart/form-data">
-                {{-- @csrf --}}
+                @csrf
 
                 @include('proyecto.form')
 

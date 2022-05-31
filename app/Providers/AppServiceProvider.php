@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\URL;
+// use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,8 +26,8 @@ class AppServiceProvider extends ServiceProvider
     {
       // Paginator::useBootstrap();
 
-      if(config(key: 'app.env') === 'production') {
-          URL::forceScheme('https');
-      }
+      // if(config(key: 'app.env') === 'production') {
+      //     URL::forceScheme('https');
+      // }
     }
 }

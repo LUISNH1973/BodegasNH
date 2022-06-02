@@ -219,7 +219,8 @@
                 </div>
             </div>
         </section>
-        
+
+
         <!-- Contact Section (SECCIÓN DE CONTACTO)-->
         <section class="page-section" id="contact">
 
@@ -235,6 +236,8 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
+
+                        <!-- FORMULARIO DE CONTACTO (CONTÁCTAME)-->
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -279,6 +282,7 @@
                                     <br />
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item mx-0 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Productos</a></li>
+                                    {{-- <a href="assets\img\img_vinos\BodegaNH.jpg"" <i class="fab fa-weight fa-2x  "></i>BodegasNH</a> --}}
                                 </div>
                             </div>
                             <!-- Submit error message-->

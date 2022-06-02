@@ -219,7 +219,8 @@
                 </div>
             </div>
         </section>
-        
+
+
         <!-- Contact Section (SECCIÓN DE CONTACTO)-->
         <section class="page-section" id="contact">
 
@@ -235,6 +236,8 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
+
+                        <!-- FORMULARIO DE CONTACTO (CONTÁCTAME)-->
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -242,7 +245,13 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <form method="POST" action="{{ route('password.email') }}" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                       
+                         @csrf
+                      
+                        
+
+                        
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -260,7 +269,7 @@
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Número de Teléfono</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">El número de teléfono es necesario.</div>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required, integer">El número de teléfono es necesario.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
@@ -288,14 +297,22 @@
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error de envio de mensaje!</div></div>
 
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>  <div class="row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Recuperar contraseña') }}
+                                </button>
+                            </div>
+                        </div>
                             
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Footer-->
+
+
+        <!-- Footer PIE DE PÁGINA-->
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
@@ -332,7 +349,9 @@
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; BODEGA NH 2022</small></div>
         </div>
-        <!-- Portfolio Modals-->
+
+
+        <!-- Portfolio Modals(MODALES PARA LAS SUBVENTANAS DE LOS PRODUCTOS)-->
         <!-- Portfolio Modal 1-->
         {{-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
             <div class="modal-dialog modal-xl">

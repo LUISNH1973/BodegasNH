@@ -40,13 +40,12 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Productos</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre Nosotros</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
-
                         <!-- Navigation productos -->
-                         {{-- @if (Route::has('login'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('proyectos.index') }}">{{ __('Productos') }}</a>
-                            </li>
-                        @endif --}}
+                         @if (Route::has('login'))
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="{{ route('proyectos.index') }}">{{ __('Productos') }}</a>
+                        </li> --}}
+                    @endif
 
                           <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
@@ -88,11 +87,11 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead PORTADA-->
+        <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead PORTADA IMAGEN-->
-                <div class="row">
+                <!-- Masthead Avatar Image-->
+                 <div class="row">
                     <img src="assets\img\img_vinos\BodegaNH.jpg" alt="Nuestros vinos" width width="00px" height="700px">
                 </div>
                
@@ -105,7 +104,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                
+                {{-- <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p> --}}
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -219,7 +218,6 @@
                 </div>
             </div>
         </section>
-        
         <!-- Contact Section (SECCIÓN DE CONTACTO)-->
         <section class="page-section" id="contact">
 
@@ -279,6 +277,7 @@
                                     <br />
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item mx-0 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Productos</a></li>
+                                    {{-- <a href="assets\img\img_vinos\BodegaNH.jpg"" <i class="fab fa-weight fa-2x  "></i>BodegasNH</a> --}}
                                 </div>
                             </div>
                             <!-- Submit error message-->

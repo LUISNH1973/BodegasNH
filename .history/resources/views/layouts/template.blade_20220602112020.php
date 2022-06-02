@@ -279,6 +279,7 @@
                                     <br />
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item mx-0 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Productos</a></li>
+                                    {{-- <a href="assets\img\img_vinos\BodegaNH.jpg"" <i class="fab fa-weight fa-2x  "></i>BodegasNH</a> --}}
                                 </div>
                             </div>
                             <!-- Submit error message-->

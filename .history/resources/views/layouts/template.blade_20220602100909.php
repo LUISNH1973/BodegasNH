@@ -219,7 +219,8 @@
                 </div>
             </div>
         </section>
-        
+
+
         <!-- Contact Section (SECCIÓN DE CONTACTO)-->
         <section class="page-section" id="contact">
 
@@ -235,6 +236,8 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
+
+                        <!-- FORMULARIO DE CONTACTO (CONTÁCTAME)-->
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -260,7 +263,7 @@
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Número de Teléfono</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">El número de teléfono es necesario.</div>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required, integer">El número de teléfono es necesario.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
@@ -279,6 +282,7 @@
                                     <br />
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item mx-0 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Productos</a></li>
+                                    {{-- <a href="assets\img\img_vinos\BodegaNH.jpg"" <i class="fab fa-weight fa-2x  "></i>BodegasNH</a> --}}
                                 </div>
                             </div>
                             <!-- Submit error message-->
